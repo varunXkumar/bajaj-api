@@ -41,7 +41,7 @@ const buyStocks = async(accountNumber) => {
         "company": "Bajaj Finserv",
         "currentPrice": currentStockPrice,
         "accountNumber": accountNumber,
-        "githubRepoLink": "https://github.com/your_username/your_repository" // Replace with your GitHub repo link
+        "githubRepoLink": "https://github.com/varunXkumar/bajaj-api" 
     };
 
     try {
