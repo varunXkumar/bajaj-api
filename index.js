@@ -7,7 +7,7 @@ const createAccount = async() => {
     const accountData = {
         "name": "Varun Kumar",
         "email": "varun1525.be21@chitkara.edu.in",
-        "rollNumber": 2110992155, // Your roll number
+        "rollNumber": 2110991525, // Your roll number
         "phone": 7707908940 // Your phone number
     };
 
@@ -28,16 +28,14 @@ const createAccount = async() => {
 };
 
 // Step 2: Research Bajaj Finserv
-// You need to fetch Bajaj Finserv's current stock price and recent performance from a reliable source.
-// For demonstration purposes, let's assume the current stock price is 5000 INR.
-const currentStockPrice = 5000; // Placeholder value, replace with actual data from research
+const currentStockPrice = 5000; 
 
 // Step 3: Buy Stocks
 const buyStocks = async(accountNumber) => {
     const buyStocksUrl = "https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/buyStocks";
     const headers = {
         "Content-Type": "application/json",
-        "bfhl-auth": "123456" // Your roll number
+        "bfhl-auth": "2110991525" 
     };
     const buyData = {
         "company": "Bajaj Finserv",
@@ -60,8 +58,6 @@ const buyStocks = async(accountNumber) => {
         throw error;
     }
 };
-
-// Execute the steps sequentially
 (async() => {
     try {
         const accountNumber = await createAccount();
